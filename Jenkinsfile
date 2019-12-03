@@ -1,6 +1,6 @@
 pipeline{
 
-agentany
+agent any
 
 stages{
 
@@ -21,7 +21,7 @@ sh  "mvn test -f aws-1"
 }
 stage('deploy'){
 steps{
-sh "mvn package-f aws-1"
+sh "mvn package -f aws-1"
 }
 }
 }
