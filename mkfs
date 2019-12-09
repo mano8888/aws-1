@@ -1,0 +1,39 @@
+how to carete a partition 
+
+step 1: 
+
+===============================
+fdisk
+fdisk -l
+fdisk <device name>
+press P button for primary extension
+next give the enter button up to changes
+and save it ;for save press w button
+and quit ;for quit press q button
+how to crate a file system
+
+step 2;
+================================
+mkfs.ext3 <device name>
+to access the partion and to attach the dir to the file sysytem for that you need to mount the directory to the file syystem
+
+how to mount
+
+step 3;
+==================================
+first we need to craete a new dir
+next that dir will mmount to file sysytem
+for that we need use the below command
+mount <device name> /dir
+dir will mount to the file sysytem
+once check the dir is it mounted or not....
+for taht we need to enter the cd /dir name
+then we will enter into a dir its's working...
+
+how to permanent the mount
+
+step 4;
+=================================
+e2label /dir
+vim /etc/fstab
+addthe ifo of file
